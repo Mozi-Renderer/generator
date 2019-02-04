@@ -1,6 +1,8 @@
 #ifndef UUID_D7746018E901B4EE35CEDC635307152F
 #define UUID_D7746018E901B4EE35CEDC635307152F
 
+#include <algorithm>
+
 #include "Edge.hpp"
 #include "ShapeVertex.hpp"
 #include "MergeShape.hpp"
