@@ -15,5 +15,6 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 add_definitions(-DGENERATOR_USE_GLM -DGLM_ENABLE_EXPERIMENTAL)
 include_directories(SYSTEM ${GLM_INCLUDE_DIR})
 
-set(TARGET_NAME ${CMAKE_STATIC_LIBRARY_PREFIX}generator${SUFFIX}${CMAKE_STATIC_LIBRARY_SUFFIX})
+set(TARGET_NAME generator)
 add_subdirectory(src)
+set_property(TARGET generator PROPERTY POSITION_INDEPENDENT_CODE TRUE)
